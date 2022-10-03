@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,500;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+</head>
+<body style>
+    <header>
+      <nav>
+        <ul>
+            <li>
+                   <a href="index.html">ACCUEIL</a> 
+                   <!--Sous barre-->
+                   <ul class="sousbar">
+                     <li><a href="#">On est déjà à l'accueil</a></li>
+                     <li><a href="#">Marche pas</a></li>
+                     <li><a href="#">Ne fonctionne pas</a></li>
+                   </ul>
+            </li>
+            <li>
+                   <a href="cineserie.html">CINEMA & SERIES</a>
+                   <!--Sous barre-->
+                   <ul class="sousbar">
+                     <li><a href="#">ça marchera peut-être plus tard</a></li>
+                     <li><a href="#">toujours pas</a></li>
+                     <li><a href="#">qui ne tente rien n'a rien ..</a></li>
+                   </ul>
+            </li>
+            <li class="saroule active">
+                   <a href="jeuxvideo.html">JEUX-VIDEOS</a>
+                   <!--Sous barre-->
+                   <ul class="sousbar">
+                     <li><a href="#">Mais c'était sur enfaite</a></li>
+                     <li><a href="#">Accès refusé</a></li>
+                     <li><a href="#">Error 404 no html</a></li>
+                   </ul>
+            </li> 
+            <li>
+                   <a href="sport.html">SPORT</a>
+                   <!--Sous barre-->
+                   <ul class="sousbar">
+                     <li><a href="#">Accès ouvert le 5 décembre 2089</a></li>
+                     <li><a href="#">Bwhaaaa</a></li>
+                     <li><a href="#">POURQUOIIIIII</a></li>
+                   </ul>
+            </li>
+            <li>
+                   <a href="musique.html">MUSIQUE</a>
+                   <!--Sous barre-->
+                   <ul class="sousbar">
+                     <li><a href="#">Html</a></li>
+                     <li><a href="#">CSS</a></li>
+                     <li><a href="#">CSS++</a></li>
+                   </ul>
+            </li>
+            <li class="title-nav">
+              <a href="https://dictionnaire.lerobert.com/definition/inutile" target="_blank"><img src="Img/logo.png" alt="title"></a>
+            </li>
+            
+        </ul>
+    </nav>
+    
+    <div class="jv-div">
+      <p>Les jeux-vidéos bien-sûr</p>
+      <div class="svg"></div>
+    </div>
+    
+    </header>
+      
+    <h1> Voici une petite liste de jeux que j'apprécie </h1>
+
+    <div class="scrollmania">
+      <div id="img1">The Witcher</div>
+      <div id="img2">Elden ring</div>
+      <div id="img3">Rocket League</div>
+      <div id="img4">Street fighter</div>
+      
+    </div>
+    <div class="scrollmania">
+      <div id="img5">Demon's crest</div>
+      <div id="img6">The binding of Isaac</div>
+      <div id="img7">Resident Evil</div>
+      <div id="img8">Hollow Knight</div>
+      
+    </div>
+ 
+    <h1>Mon "outil de travail"</h1>
+    
+    <img src="Img/outil.jpg" alt="pc pasmal" class="pc-gam">
+
+
+
+    <footer>
+         
+      <a href="https://github.com/Wallmonger/nicolasb.git" target="_blank"><img src="Img/github.png" alt="github"> </a>
+      <a href="Img/hahabouk.jpg" target="_blank"><img src="Img/facebouk.png" alt="facebook"> </a>
+      <a href="https://twitter.com/" target="_blank"><img src="Img/twitter.png" alt="twitter"> </a>
+      <a href="https://fr.wikipedia.org/wiki/Am_stram_gram" target="_blank"><img src="Img/insta.png" alt="insta"></a>
+      <a href="https://www.linkedin.com/in/nicolas-berrier-b55095241/" target="_blank"><img src="Img/linkemachin.png" alt="linkedin"></a>  
+</footer>
+   <script>
+     const one = document.getElementById("img1");
+     const two = document.getElementById("img2");
+     const three = document.getElementById("img3");
+     const four = document.getElementById("img4");
+     const five = document.getElementById("img5");
+     const six = document.getElementById("img6");
+     const seven = document.getElementById("img7");
+     const eight = document.getElementById("img8");
+
+  
+     
+    
+     document.addEventListener("scroll", (e) => {
+       console.log(window.scrollY);
+       if (window.scrollY > 500)
+       {
+         one.style.visibility = "visible";
+         one.style.opacity = "1";
+
+         two.style.visibility = "visible";
+         two.style.opacity = "1";
+
+         three.style.visibility = "visible";
+         three.style.opacity = "1";
+
+         four.style.visibility = "visible";
+         four.style.opacity = "1";
+
+         five.style.visibility = "visible";
+         five.style.opacity = "1";
+
+         
+         six.style.visibility = "visible";
+         six.style.opacity = "1";
+
+         seven.style.visibility = "visible";
+         seven.style.opacity = "1";
+
+         eight.style.visibility = "visible";
+         eight.style.opacity = "1";
+       }
+       
+          
+       
+     })
+     
+     
+   </script>
+</body>
+</html>

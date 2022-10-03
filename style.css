@@ -1,0 +1,924 @@
+/* ------------PAGE 1 ------------------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    
+    overflow-x: hidden;
+    
+    
+    
+                                                          /* NAVBAR */  
+}
+
+
+nav ul {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 10px black;
+    z-index: 3;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    
+    padding: 0px;
+    transition: 500ms;
+}
+
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+nav ul li a:hover {
+    color: white;
+    
+}
+
+nav ul li:hover {
+    
+    background: rgb(0, 5, 109);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    
+    
+    
+}
+
+
+.active {
+    background-color: rgb(0, 99, 191);
+    
+    color: white;
+}
+.active a {
+    color: white;
+}
+
+
+.title-nav {
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin: 0  ; 
+    
+}
+
+.title-nav img {
+    height: 1.9rem;
+    
+}
+
+.title-nav a {
+    padding-bottom: 0;
+}
+
+
+                                                         /* Sous menus NAVBAR */
+                                                          
+
+.sousbar {
+    display: none;
+}
+
+nav ul li:hover .sousbar {
+    display: block;
+    width: 20%; 
+    text-align: center;
+    float: none;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    padding: 15px 15px;
+    
+}
+.sousbar li a {
+    color: black;
+}
+
+
+                                                         /* BANNIERE */
+.yari {
+    
+    background: url(Img/banniere.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 5px 5px 10px black;
+    animation: yariman 4s ease forwards;
+    
+}
+
+@keyframes yariman {
+    from {height: 0px;}
+    to {height: 100vh;}
+}
+
+                                                        /* ARTICLE */
+.container {
+    display : grid;
+    grid-template-columns: 40% 60%;
+    border-top: 1px solid black;
+    
+    
+}
+
+.onediv {
+    grid-column: 1/2;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(177,177,177,1) 0%, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 100%);
+    animation: onediv 1s ease;
+    z-index: 2;
+    overflow: hidden;
+    
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    
+    
+    
+}
+
+
+
+@keyframes onediv {
+    from {transform: translateX(-500px);}
+    to {transform: translateX(0px);}
+}
+
+.twodiv {
+    grid-column: 2/2;
+    background: url(Img/smile2.jpg) no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+   
+    
+    border: 0px solid black;
+    animation: twodiv 1s ease;
+    
+    
+    
+    
+}
+
+@keyframes twodiv {
+    from {transform: translateX(2000px)}
+    to {transform: translateX(0px);}
+}
+                                   /* ANIM BANNIERE */
+.overtext {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    height: 100%;
+    animation: overtext 2s ease forwards;
+    position: absolute;
+    z-index: 2;
+    text-shadow:4px 5px 5px #ff7800;
+}
+
+@keyframes overtext {
+    from {top: 500vh;}
+    to {top: 45vh;}}
+                              
+
+    /* LOADING EFFECT */
+
+    /* STARS I */
+.stars {
+    display: grid;
+    grid-template-columns: 10% 10% 0% 20% 10% 10% 20% 0% 10% 10%;
+    
+    
+}
+
+
+.stars div {
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    height: 100px;
+}
+
+
+
+
+
+.stars div:nth-child(1) {
+    animation: loading 1s ease infinite;
+    
+} 
+
+.stars div:nth-child(2) {
+    animation: loading 1s ease-out infinite;
+    animation-delay: 200ms;
+} 
+.stars div:nth-child(3) {
+    animation: loading 1s ease infinite;
+    animation-delay: 400ms;
+} 
+.stars div:nth-child(4) {
+    animation: loading 1s ease infinite;
+    animation-delay: 600ms;
+} 
+.stars div:nth-child(5) {
+    animation: loading 1s ease infinite;
+    animation-delay: 800ms;
+} 
+.stars div:nth-child(6) {
+    animation: loading 1s ease infinite;
+    animation-delay: 1000ms;
+} 
+.stars div:nth-child(7) {
+    animation: loading 1s ease infinite;
+    animation-delay: 1200ms;
+} 
+.stars div:nth-child(8) {
+    animation: loading 1s ease infinite;
+    animation-delay: 1400ms;
+} 
+.stars div:nth-child(9) {
+    animation: loading 1s ease infinite;
+    animation-delay: 1600ms;
+} 
+.stars div:nth-child(10) {
+    animation: loading 1s ease infinite;
+    animation-delay: 1800ms;
+} 
+ @keyframes loading {
+    0% {background-color: black;}
+    20% {background-color: black;}
+    40% {background-color: black;}
+    60% {background-color: black;}
+    80% {background-color: black;}
+    20% {background-color: rgb(17, 0, 255);}
+    
+ }
+
+
+
+
+
+ /*-------------------------------------*/
+
+ .stars2 {
+    display: grid;
+    grid-template-columns: 0% 20% 10% 10% 10% 10% 10% 10% 20% 0%;
+    
+}
+
+.stars2 div {
+    background-color: black;
+    border: 2px solid white;
+    height: 100px;
+}
+
+.stars2 div:nth-child(1) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 200ms;
+} 
+
+.stars2 div:nth-child(2) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 400ms;
+} 
+.stars2 div:nth-child(3) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 600ms;
+} 
+.stars2 div:nth-child(4) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 800ms;
+} 
+.stars2 div:nth-child(5) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 1000ms;
+} 
+.stars2 div:nth-child(6) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 1400ms;
+} 
+.stars2 div:nth-child(7) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 1600ms;
+} 
+.stars2 div:nth-child(8) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 1800ms;
+} 
+.stars2 div:nth-child(9) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 2000ms;
+} 
+.stars2 div:nth-child(10) {
+    animation: loading2 1s ease-in infinite;
+    animation-delay: 2200ms;
+} 
+ @keyframes loading2 {
+    0% {background-color: black;}
+    20% {background-color: black;}
+    40% {background-color: black;}
+    60% {background-color: black;}
+    80% {background-color: black;}
+    20% {background-color: rgb(0, 190, 204);}
+    
+ }
+
+
+  /* FOOTER */
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 6rem;
+     background: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(177,177,177,1) 0%, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: -5px -5px 5px black;
+    
+}
+
+footer img {
+    
+    margin-top: 10px;
+    position: static;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    left: 45%;
+    
+    padding: 1px;
+    
+    
+}
+
+footer img:hover {
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.73), -2px -2px 5px rgba(0, 0, 0, 0.73);;
+    transition: 0.2s;
+}
+
+
+     /* ------------------- Page 2 -------------------------------------------------------------------------------------- */
+
+
+     .yari2 {
+        background: url(Img/pellicule.gif) no-repeat center;
+        background-size: cover;
+        height: 600px;
+    }
+    
+    
+                                                       /* ruban */
+    
+    .pelcontent {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    @keyframes arrivage {
+        from { transform: translateY(1500px);} 
+        to {transform: translateY(0px);}
+    }
+    
+    @keyframes arrivagem {
+        from { transform: translateY(1500px);} 
+        to {transform: translateY(0px);}
+    }
+
+    .rectanglepellicule {
+       
+        
+        height: auto;
+        width: 10vh;
+        animation: rectangle 10s alternate infinite , arrivage 1s ease forwards ;
+        background: grey;
+        
+    }
+    
+       .rectanglepellicule2 {
+        transform: translateY(1500px);
+        height: auto;
+        width: 10vh;
+        animation-direction: alternate;
+        background: grey;
+        animation: arrivage 1s ease forwards, rectangle 10s alternate infinite ;}
+        
+        
+    @keyframes rectangle {
+        from {background: grey}
+        to {background: black;}
+    }
+    
+
+    .rectanglepelliculemilieu {
+        background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(145,145,145,1) 16%, rgba(0,0,0,1) 18%, rgba(34,34,34,1) 19%, rgba(87,87,87,1) 22%, rgba(255,255,255,1) 27%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 30%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 42%, rgba(0,0,0,1) 42%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        animation: arrivagem 2s ease forwards;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Mate SC', serif;
+
+
+    }
+    
+    .rectanglepelliculemilieu > p {
+        background-color: black;
+        color: white;
+    }
+
+    .rectanglepelliculemilieu iframe {
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px white;
+    }
+ 
+    
+/* -----------------------------------------------------------------------------------------------------------------------PAGE 3 */
+
+h1 {
+    color: rgb(11, 148, 43);
+    text-align: center;
+    font-family: 'Imperial Script', cursive;
+    font-size: 10vh;
+    
+}
+
+
+    .jv-div {
+        position: relative;
+        background: rgb(7,94,0);
+background: linear-gradient(61deg, rgba(7,94,0,1) 6%, rgba(41,182,79,1) 26%, rgba(41,182,95,1) 45%, rgba(41,182,52,1) 55%, rgba(41,182,45,1) 66%);
+        height: 100vh;
+        
+    }
+    
+    .jv-div p {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 5vh;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-family: 'Imperial Script', cursive;
+        font-size: 8rem;
+        color: white;
+        animation: opacitemax 3s ease;
+    }
+    
+    @keyframes opacitemax {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .scrollmania {
+        width: 100%;
+        height: 100vh;
+        background: url(Img/matrix.jpg) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .scrollmania div {
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Imperial Script', cursive;
+        color: white;
+        text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; 
+        box-shadow: 2px 2px 5px rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: inset 0px 60px black;
+    }
+    
+    
+
+
+    #img1 {
+        background: url(Img/thewitcher3.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 2s ease;
+        
+    }
+
+    #img2 {
+        background: url(Img/eldentrue.png) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease; 
+        transition-delay: 1s ;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Imperial Script', cursive;
+        color: white;
+        
+    }
+
+    #img3 {
+        background: url(Img/rocket.jpg);
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 2s ;
+    }
+
+    #img4 {
+        background: url(Img/street.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 3s ;
+    }
+
+    #img5 {
+        background: url(Img/demoncrest.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 4s ;
+    }
+
+    #img6 {
+        background: url(Img/isaac.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 5s ;
+    }
+
+    #img7 {
+        background: url(Img/re4.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 6s ;
+    }
+
+    #img8 {
+        background: url(Img/holo.jpg) no-repeat center;
+        background-size: cover;
+        width: 20%;
+        opacity: 0;
+        transition: 1s ease;
+        transition-delay: 7s ;
+    }
+
+    .svg {
+        position: absolute;
+        bottom: 0;
+        left: 60%;
+        background: url(Img/fleche.png);
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        filter: invert();
+        animation: svg 1s linear infinite alternate-reverse;
+        
+    }
+
+    @keyframes svg {
+        from {transform: translateY(0px);}
+        to {transform: translateY(30px);}
+    }
+
+ /* PAGE 4 ---------------------------------------------------------------------------------------------------------- */
+    
+    .yavinIV {
+         
+            border-bottom: none;
+            background: url(Img/sports.jpg) no-repeat center;
+            background-size: cover;
+            height: 50vh;
+            box-shadow: inset 5px 5px 10px black;
+            animation: slidex 2s ease-out forwards;
+            border-bottom: 2px solid yellow;
+            border-left: 2px solid yellow;
+            border-right: 2px solid yellow;
+            margin-bottom: 2vh;
+    
+    }
+    
+    @keyframes slidex {
+        from {transform: translateX(2500px);}
+        to {transform: translateX(0px);}
+    }
+
+    .containerY {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        
+        overflow: hidden;
+        
+    }
+    
+    .onedivY {
+        grid-column: 1/2;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        box-shadow: 2px -2px 5px black;
+        border-top-right-radius: 15px;
+        font-size: 2rem;
+        color: rgb(0, 0, 0);  
+        animation: slidediv1 2s ease-in-out forwards, boxblur 3s ease forwards;
+        margin-top: 2vh;
+    }
+    
+    .onedivY img {
+        width: 100%;
+    }
+
+    @keyframes slidediv1 {
+        from {transform: translateX(-2500px);}
+        to {transform: translateX(0px);}
+    }
+    
+    @keyframes boxblur {
+        from {box-shadow: inset 50px 50px 50px 50px #000000;}
+        to {box-shadow: 2px -2px 5px black;}
+    }
+
+    .twodivY {
+        grid-column: 2/2;
+        width: auto;
+        height: 100vh;
+        animation: slidediv2 2s ease-in-out forwards;
+    }
+        @keyframes slidediv2 {
+        from {transform: translateX(2500px);}
+        to {transform: translateX(0px);}
+    }
+    .twodivY img {
+        margin: 2vh 0 1vh 1vh;
+        height: 18vh;
+        display: block;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        
+        
+        
+    }
+    
+    .twodivY div {
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: 'Bangers', cursive;
+        font-weight: 400;
+        
+        
+    }
+    
+
+    .bodyYav {
+        background: rgb(162,110,6);
+        background: linear-gradient(90deg, rgba(162,110,6,1) 0%, rgba(255,234,38,1) 0%, rgba(255,205,53,1) 100%);
+        
+    }
+
+    .boite-surprise {
+        position: relative;
+    }
+
+    
+    .surprise {
+        position: absolute;
+        margin: 2vh 0 1vh 1vh;
+        padding: 20px;
+        height: 18vh;
+        display: block;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: rgb(162,110,6);
+        background: linear-gradient(90deg, rgba(162,110,6,1) 0%, rgba(255,234,38,1) 0%, rgba(255,205,53,1) 100%);
+        border-left: 5px dashed black;
+        
+    }
+
+    .surprise1 {
+        animation: hovermhm 2s ease-in-out forwards;
+        animation-delay: 2s;
+    }
+
+    .surprise2 {
+        animation: hovermhm 2s ease-in-out forwards;
+        animation-delay: 4s;
+    }
+
+    .surprise3 {
+        animation: hovermhm 2s ease-in-out forwards;
+        animation-delay: 6s;
+    }
+
+    .surprise4 {
+        animation: hovermhm 5s ease-in forwards;
+        animation-delay: 9s;
+    }
+
+    @keyframes hovermhm {
+        from {width: 100%;}
+        to {width: 0%;}
+    }
+
+    hr {
+        height: 4px;
+        color: white;
+    }
+        
+
+    h2 {
+        color: orangered;
+        
+        font-family: 'Bangers', cursive;
+        padding-left: 10px;
+    }
+
+    .matoutext {
+        font-family: 'Bangers', cursive;
+        padding-left: 10px;
+    }
+    /* PAGE 5 ------------------------------------------------------------------------------------------------------- */
+
+    .yarimusic {
+    background: url(Img/equalizer.jpg) no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    box-shadow: 5px 5px 10px black;
+    filter: grayscale(100%);
+    animation: arrivagemk2 2s ease-in-out forwards, opayari 3s alternate infinite;
+    
+    }
+    
+    @keyframes opayari {
+         from {
+            opacity: 0;
+         }
+         to {
+            opacity: 0.7;
+         }
+    }
+
+
+    @keyframes arrivagemk2 {
+        from { transform: translateX(-1500px);} 
+        to {transform: translateX(0px);}
+    }
+
+    .overtextmusic {
+        transform-origin: center;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+        height: 100%;
+        font-family: 'Bungee Inline', cursive;
+        animation: overtextmusic 2.5s ease forwards;
+        position: absolute;
+        z-index: 2;
+        text-shadow:4px 5px 5px #000000;
+        top: 45vh;
+        
+    }
+    
+    @keyframes overtextmusic {
+        from {opacity: 0;}
+        to {opacity: 1;}}
+
+    .space {
+         background-color: black;
+         height: 80vh;
+         font-family: 'Bungee Inline', cursive;
+
+         color: white;
+         font-size: 5rem;
+         text-align: center;
+         text-shadow: 4px 4px 5px rgb(40, 28, 212);
+         animation: textshadowspace 1s alternate infinite;
+    }
+
+   
+    
+    @keyframes textshadowspace {
+        from { text-shadow: 4px 4px 5px rgb(40, 28, 212);}
+        to {text-shadow: 8px 8px 8px rgb(0, 190, 204);}
+    }
+
+
+    .containermusic {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .saucisse {
+        grid-column: 1/2;
+        background: url(Img/ableton.png) no-repeat center;
+        background-size: cover;
+        height: 50vh;
+        border: 2px solid white;
+        border-right: none;
+        animation: bankai 1s alternate infinite;
+    }
+
+    @keyframes bankai {
+        from {opacity: 1;}
+        to {opacity: 0.5;}
+    }
+
+    .alignsaucisse2 {
+        display: flex;
+    }
+
+    .saucisse2 {
+        grid-column: 2/2;
+        background-color: white;
+        height: 50vh;
+        font-family: 'Bungee Inline', cursive;
+        justify-content: center;
+        align-items: center;
+        flex-direction: center;
+        color: black;
+        font-size: 3rem;
+        text-align: center; 
+        border: 2px solid white;
+        border-left: none;
+        animation: animsaucisse2 1s alternate infinite;
+    }
+
+    .containerfinal {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    
+    .imganim1 {
+        width: 100%;
+        animation: imgsize 1s alternate infinite;
+
+    }
+
+    @keyframes imgsize {
+        from {transform: translateY(0); scale: 1;}
+        to  {transform: translateY(15px); scale: 0.95;}
+    }
+
+    .imganim2 {
+        width: 100%;
+        animation: imgsize2 1s alternate infinite;
+        animation-delay: 1s;
+    }
+   
+   @keyframes imgsize2 {
+    from {transform: translateY(0); scale: 1;}
+    to {transform: translateY(-30px); scale: 0.95;}
+   }
+
+
+
+    /* Medias */
+
+@media only screen and (max-width : 600px) {
+    nav ul {
+        padding: 0;
+        display: block;
+        text-align: center;
+        position: static;
+    }}
